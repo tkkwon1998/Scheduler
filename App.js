@@ -51,7 +51,7 @@ const getCourseNumber = course => (
 // );
 
 const Banner = ({title}) => (
-  <Text style={styles.bannerStyle}>{title || '[loading...]'}</Text>
+  <Text style={styles.banner}>{title || '[loading...]'}</Text>
 );
 
 const App = () => {

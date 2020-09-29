@@ -17,10 +17,13 @@ const CourseList = ({courses}) => {
     const termCourses = courses.filter(course => selectedTerm === getCourseTerm(course));
     
     return (
+        <View>
+            <TermSelector selectedTerm={selectedTerm} setSelectedTerm={setSelectedTerm}/>
+
       <ScrollView contentContainerStyle={styles.courseList}>
-        <TermSelector selectedTerm={selectedTerm} setSelectedTerm={setSelectedTerm}/>
         <CourseSelector courses={termCourses} />
       </ScrollView>
+      </View>
     );
   };
 

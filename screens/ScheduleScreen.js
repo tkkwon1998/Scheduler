@@ -68,7 +68,7 @@ const ScheduleScreen = ({navigation}) => {
     const canEdit = user && user.role === 'admin';
   const [schedule, setSchedule] = useState({ title: '', courses: [] });
   const view = (course) => {
-    navigation.navigate(canEdit ? 'CourseEditScreen' : 'CourseDetailScreen', { course });
+    navigation.navigate(canEdit ? 'CourseEditScreen' : 'CourseEditScreen', { course });
   };
   const url = 'https://courses.cs.northwestern.edu/394/data/cs-courses.php';
 

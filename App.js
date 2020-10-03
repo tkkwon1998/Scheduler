@@ -27,7 +27,7 @@ const SignInButton = ({ navigation, user }) =>
   );
 
 const App = () => {
-  const [user, setUser] = useState({ role: "admin" });
+  const [user, setUser] = useState(null);
   const [auth, setAuth] = useState();
 
   useEffect(() => {
